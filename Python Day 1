@@ -1,0 +1,105 @@
+print("pawan")
+print("A")
+print('A')
+
+#datatypes
+
+#int
+print(875478)
+print(-3)
+print(366)
+
+#float
+print(87547.8)
+print(-3)
+print(366.00)
+
+#bool
+print(True)
+print(False)
+
+#string 
+print("pawan")
+print("A")
+print('A')
+
+
+#print
+
+print("pawan" , "chaudhary", 12, True, 12.5)
+print()
+print()
+print('-', end = "m")
+print('-', end = "\n")
+print('-', end = "\n\n\n")
+print('.')
+
+
+
+# Checking the datatype
+
+print(type(-42341))
+print(type(0))
+print(type(42341))
+print("* * * * * * *")
+
+print(type(-423.41))
+print(type(0.0))
+print(type(42.341))
+print("* * * * * * *")
+
+print(type("A"))
+print(type("Ashish"))
+print(type("Asf dskjfh kjsdhfkj hsdkf hsdkhfk"))
+print(type("01/10/2025"))
+print(type("10:25"))
+print("* * * * * * *")
+
+print(type(True))
+print(type("True"))
+
+
+#Arithmetic Operators
+
+print(12 + 34)
+print(12 - 34)
+print(13 * 34)
+print(12 / 4)
+print(12 // 4)
+print(12 % 4)
+print(12 ** 4)
+
+
+print('A' + 'B'+'\n\t'+'d' )
+
+print('A'*3)
+print('-'*10)
+
+print(True+True)
+print(True+True+True-False)
+
+print(((True+True)*2)*'pawan')
+print(((True*False)*2)*'pawan')
+
+print(True * False)
+print((True * False)*5)
+print(((True * False)*5)*'pawan', end=" ")
+print('A'*0, end = " ")
+print('-')
+
+a = 10
+print(a)
+
+
+# principle amount = 5000
+#interest = 12
+# year=5
+
+#simple interest
+print(5000*12/100*5)
+
+# compund interest
+print(5000*(1+12/100)**5-5000)
+#difference
+print((5000*(1+12/100)**5-5000)-(5000*12/100*5))
+print('pawan' 'chaudhary')
