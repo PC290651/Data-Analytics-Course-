@@ -1,0 +1,84 @@
+user_name = 'Aishvi'
+phone_no = 9567898760
+address = 'Noida'
+batch = 'd-10'
+mail = 'aishvi@gmail.com'
+grnder = ''
+dob = ''
+education_background =''
+isworking = True
+
+user_1 = ['Aishvi', 9567898760, 'Noida', 'd-10']
+
+user_1[0]
+
+lst[]
+#append all th even number between 1 to 100 into the list
+
+
+lst = []
+for i in range(2, 101, 2):
+  lst.append(i)
+print(lst)
+
+
+# sum of all th even number between 1 to 100
+sum_of_lst = 0
+for i in range(2, 101, 2):
+  sum_of_lst += i
+  print(sum_of_lst)
+
+
+#sum of all the even element of list
+s = 0
+for i in range(len(lst)):
+  s = s + lst[i]
+  print(s)
+
+
+#sum of all the even place elements of list
+
+
+#sum of all the even place elements of list
+sum_of_even = 0
+for i in range(0, len(lst), 2):
+ sum_of_even += lst[i]
+
+print(sum_of_even)
+
+
+
+#sum of all the odd place elements of list
+sum_of_odd = 0
+for i in range(1, len(lst), 2):
+ sum_of_odd += lst[i]
+
+print(sum_of_odd)
+
+
+n = int(input('enter a number : '))
+#5, 100, 12300, 125678834
+s = 0
+for i in range(n+1):
+  s+= i
+print(s)
+
+
+# for even number
+p = 6
+print(p * ((p//2) + 0.5))
+
+
+# for odd number
+p = 11
+print(p * ((p//2) + 1))
+
+pa =100
+print(pa*(pa+1)//2)
+
+
+user_1 = ['Aishvi', [9567898760, 75567865], 'Noida', 'd-10']
+
+
+user_1[1][1]
+
