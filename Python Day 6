@@ -1,0 +1,65 @@
+!git clone https://github.com/AshishJangra27/datasets.git
+
+import pandas as pd
+df = pd.read_csv('/content/datasets/OpenBook/0_10000.csv')
+df.head(5)
+
+df
+
+
+import os
+
+
+os.listdir('/content/datasets/OpenBook')
+
+
+csv_files = os.listdir('/content/datasets/OpenBook')
+main_df_list = []
+for csv_file in csv_files:
+  df = pd.read_csv(f'/content/datasets/OpenBook/' + csv_file)
+  main_df_list.append(df)
+  main_df = pd.concat(main_df_list, ignore_index=True)
+
+
+
+main_df_list
+
+
+
+len(main_df)
+
+
+main_df.isnull().sum()
+
+
+
+main_df['title_id'].nunique()
+
+
+main_df['title'].nunique()
+
+
+
+main_df['title'].value_counts()
+
+
+main_df.drop_duplicates(subset=['title'], inplace=True)
+
+
+main_df['title_id']
+
+
+main_df.dropna(inplace=True)
+
+
+main_df
+
+
+main_df['publish_year']
+
+main_df['publish_year'].str.split(' ').str
+
+main_df
+
+
+main_df['reading_stats'].str.split(' ').str[0]
