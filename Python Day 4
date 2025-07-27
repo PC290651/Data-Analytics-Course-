@@ -1,0 +1,75 @@
+#dct = {key: value, key: value}
+user_name = 'Aishvi'
+phone_no = 9567898760
+address = 'Noida'
+batch = 'd-10'
+mail = 'aishvi@gmail.com'
+grnder = ''
+dob = ''
+education_background =''
+isworking = True
+dct = {'roll_no' : 101, 'name' : 'Aishvi', 'address' : 'Noida', 'phone_no' : 456789456 }
+
+dct[101]
+
+dct[102]
+
+dct={ 101 : {'name' : 'Aishvi', 'address' : 'Noida', 'phone_no' : 456789456 , 'marks' : {'english': 58 , 'hindi' : 66, 'Maths' : 56}},
+      102 : {'name' : 'A', 'address' : 'Noida', 'phone_no' : [3456789765,456786789],'marks' : {'english': 67 , 'hindi' : 77, 'Maths' : 67} },
+      103 : {'name' : 'B', 'address' : 'Noida', 'phone_no' : 4545678457, 'marks' : {'english': 87 , 'hindi' : 68, 'Maths' : 86} },
+      104 : {'name' : 'C', 'address' : 'Noida', 'phone_no' : 3456788766, 'marks' : {'english': 56 , 'hindi' : 63, 'Maths' : 59} },
+      105 : {'name' : 'D', 'address' : 'Noida', 'phone_no' : 4567856666, 'marks' : {'english': 91 , 'hindi' : 68, 'Maths' : 54} }}
+
+
+dct[101]['phone_no']
+
+
+dct[102]['phone_no'][1]
+
+
+
+for key in dct.keys():
+
+  total_marks = sum(list(dct[key]['marks'].values()))
+  no_of_exams = len(dct[key]['marks'])
+  Percentage = round((total_marks/no_of_exams),2)
+
+  print('Roll no     :', key)
+  print('name        :', dct[key]['name'])
+  print('Total marks :', total_marks)
+  print('Percentage  :', Percentage,'%')
+  print('_'*25)
+
+
+
+dct[101]
+
+
+
+
+data = {'name' : 'B', 'address' : 'Noida', 'phone_no' : [4545678457], 'marks' : {'english': 87 , 'hindi' : 68, 'Maths' : 86} }
+data['score'] = 90
+data
+
+
+
+
+for key in dct.keys():
+
+  total_marks = sum(list(dct[key]['marks'].values()))
+  no_of_exams = len(dct[key]['marks'])
+  Percentage = round((total_marks/no_of_exams),2)
+
+  dct[key]['score'] = Percentage
+
+  print('Roll no     :', key)
+  print('name        :', dct[key]['name'])
+  print('Total marks :', total_marks)
+  print('Percentage  :', dct[key]['score'],'%')
+  print('_'*25)
+
+
+
+dct
+
+
